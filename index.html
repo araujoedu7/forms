@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cadastro de DEV`S</title>
+
+  <link rel="website icon" type="png" href="./internet.png">
+
+  <link rel="stylesheet" href="tp.css">
+</head>
+
+<body>
+
+  <!--Cabeçalho-->
+  <div id="topo">
+    <h1>Cadastro de DEV´s</h1>
+  </div>
+  <form method="get">
+    <fieldset id="forms">
+      <legend>Preencha os dados</legend>
+
+      <!--Nome-->
+
+      <label>Nome:</label>
+      <br>
+      <input type="text">
+
+      <!--Sobrenome-->
+      <label>Sobrenome:</label>
+      <input type="text">
+      <br>
+      <br>
+
+      <!--E-mail-->
+      <label>E-mail</label>
+      <input type="email">
+
+      <br>
+      <br>
+
+      <!--Àrea da tecnologia (rádio)-->
+      <label>Qual area da progrmação você atua?</label>
+      <br>
+      <input type="radio" name="tec">
+      <label>Front-end</label>
+
+      <br>
+
+      <input type="radio" name="tec">
+      <label>Back-end</label>
+
+      <br>
+
+      <input type="radio" name="tec">
+      <label>Fullstack</label>
+      <br>
+      <br>
+
+      <!--Nivel de Formação-->
+
+      <div>
+        <label>Nivel de Formação</label>
+        <br>
+        <select id="Senoridade">
+          <option selected disabled value="sem valor">Selecione</option>
+          <option>Junior</option>
+          <option>Pleno</option>
+          <option>Sênior</option>
+        </select>
+      </div>
+      <br>
+      <br>
+
+      <!--Lingugens usadas-->
+      <label>Quais limguagens você usa?</label>
+      <br>
+
+      <input type="checkbox">
+      <label>Html</label>
+
+      <input type="checkbox">
+      <label>JavaScript</label>
+
+      <input type="checkbox">
+      <label>TypeScript</label>
+
+      <input type="checkbox">
+      <label>PHP</label>
+
+      <input type="checkbox">
+      <label>Pyton</label>
+
+      <input type="checkbox">
+      <label>Java</label>
+
+      <input type="checkbox">
+      <label>Angular</label>
+
+      <input type="checkbox">
+      <label>React</label>
+      <br>
+      <br>
+
+      <!--Area de texto-->
+      <label>Fale sobre você:</label>
+      <br>
+      <input required="teste" id="text" type="textarea">
+
+      <br>
+
+      <div class="boton">
+
+        <input id="finallizar" onclick="fim()" type="submit" value="Salvar">
+
+      </div>
+    </fieldset>
+  </form>
+
+
+  <!--JavaScript-->
+  <script src="main.js"></script>
+</body>
+
+</html>
